@@ -8,7 +8,7 @@ import java.util.Date;
  * @author txin
  *
  */
-public class OrderMsg {
+public class OrderMsg{
 	
 	/**
 	 * 订单发起人
