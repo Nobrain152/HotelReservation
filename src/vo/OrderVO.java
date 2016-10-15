@@ -1,6 +1,5 @@
 package vo;
 
-import java.util.Date;
 import businesslogic.util.OrderState;
 import businesslogic.util.RoomType;
 

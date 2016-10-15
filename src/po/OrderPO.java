@@ -1,6 +1,5 @@
 package po;
 
-import java.util.Date;
 import java.io.Serializable;
 import businesslogic.util.OrderState;
 import businesslogic.util.RoomType;
@@ -83,15 +82,15 @@ public abstract class OrderVO implements Serializable{
 		this.orderState = orderState;
 	}
 	
-	public Date setCheckInTime(Date checkInTime) {
+	public String setCheckInTime(String checkInTime) {
 		this.checkInTime = checkInTime;
 	}
 	
-	public Date setCheckOutTime(Date checkOutTime) {
+	public String setCheckOutTime(String checkOutTime) {
 		this.checkOutTime = checkOutTime;
 	}
 	
-	public Date setLatestExecutionTime(Date latestExecutionTime) {
+	public String setLatestExecutionTime(String latestExecutionTime) {
 		this.latestExecutionTime = latestExecutionTime;
 	}
 	

@@ -31,7 +31,7 @@ public class OrderOnWebVO extends OrderVO{
 	/**
 	 * 最晚执行时间
 	 */
-	public Date latestExecutionTime;
+	public String latestExecutionTime;
 	
 	/**
 	 * 房间类型
@@ -54,7 +54,7 @@ public class OrderOnWebVO extends OrderVO{
 	public boolean hasChild;
 	
 	public OrderOnWebVO(String initiator,OrderState orderState,String reason,
-		Date latestExecutionTime,RoomType roomType,int roomNumber,int peopleNumber,boolean hasChild) {
+		String latestExecutionTime,RoomType roomType,int roomNumber,int peopleNumber,boolean hasChild) {
 		super();
 		this.initiator = initiator;
 		this.orderState = orderState;
@@ -87,7 +87,7 @@ public class OrderOnWebVO extends OrderVO{
 		return reason;
 	}
 	
-	public Date getLatestExecutionTime() {
+	public String getLatestExecutionTime() {
 		return latestExecutionTime;
 	}
 	

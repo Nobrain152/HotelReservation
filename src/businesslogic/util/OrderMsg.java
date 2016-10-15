@@ -1,6 +1,5 @@
 package businesslogic.util;
 
-import java.util.Date;
 import businesslogic.util.OrderState;
 import businesslogic.util.RoomType;
 
@@ -25,17 +24,17 @@ public class OrderMsg{
 	/**
 	 * 入住时间
 	 */
-	public Date checkInTime;
+	public String checkInTime;
 	
 	/**
 	 * 退房时间
 	 */
-	public Date checkOutTime;
+	public String checkOutTime;
 	
 	/**
 	 * 最晚执行时间
 	 */
-	public Date latestExecutionTime;
+	public String latestExecutionTime;
 	
 	/**
 	 * 房间类型
@@ -57,8 +56,8 @@ public class OrderMsg{
 	 */
 	public boolean hasChild;
 	
-	public OrderMsg(String initiator,OrderState orderState,Date checkInTime,Date checkOutTime,
-		Date latestExecutionTime,RoomType roomType,int roomNumber,int peopleNumber,boolean hasChild) {
+	public OrderMsg(String initiator,OrderState orderState,String checkInTime,String checkOutTime,
+		String latestExecutionTime,RoomType roomType,int roomNumber,int peopleNumber,boolean hasChild) {
 		super();
 		this.initiator = initiator;
 		this.orderState = orderState;
@@ -88,15 +87,15 @@ public class OrderMsg{
 		return orderState;
 	}
 	
-	public Date getCheckInTime() {
+	public String getCheckInTime() {
 		return checkInTime;
 	}
 	
-	public Date getCheckOutTime() {
+	public String getCheckOutTime() {
 		return checkOutTime;
 	}
 	
-	public Date getLatestExecutionTime() {
+	public String getLatestExecutionTime() {
 		return latestExecutionTime;
 	}
 	

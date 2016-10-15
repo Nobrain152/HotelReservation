@@ -26,17 +26,17 @@ public class OrderOnHotelVO extends OrderVO{
 	/**
 	 * 入住时间
 	 */
-	public Date checkInTime;
+	public String checkInTime;
 	
 	/**
 	 * 退房时间
 	 */
-	public Date checkOutTime;
+	public String checkOutTime;
 	
 	/**
 	 * 最晚执行时间
 	 */
-	public Date latestExecutionTime;
+	public String latestExecutionTime;
 	
 	/**
 	 * 房间类型
@@ -58,8 +58,8 @@ public class OrderOnHotelVO extends OrderVO{
 	 */
 	public boolean hasChild;
 	
-	public OrderOnHotel(String initiator,OrderState orderState,Date checkInTime,Date checkOutTime,
-		Date latestExecutionTime,RoomType roomType,int roomNumber,int peopleNumber,boolean hasChild) {
+	public OrderOnHotel(String initiator,OrderState orderState,String checkInTime,String checkOutTime,
+		String latestExecutionTime,RoomType roomType,int roomNumber,int peopleNumber,boolean hasChild) {
 		super();
 		this.initiator = initiator;
 		this.orderState = orderState;
@@ -89,15 +89,15 @@ public class OrderOnHotelVO extends OrderVO{
 		return orderState;
 	}
 	
-	public Date getCheckInTime() {
+	public String getCheckInTime() {
 		return checkInTime;
 	}
 	
-	public Date getCheckOutTime() {
+	public String getCheckOutTime() {
 		return checkOutTime;
 	}
 	
-	public Date getLatestExecutionTime() {
+	public String getLatestExecutionTime() {
 		return latestExecutionTime;
 	}
 	

@@ -2,7 +2,7 @@
 /**
  * 处理客户订单PO
  * @author txin
- * @date 2016/10/15
+ * @String 2016/10/15
  */
 package po;
 
@@ -32,17 +32,17 @@ public class OrderOnUserPO extends OrderPO implements Serializable{
 	/**
 	 * 入住时间
 	 */
-	public Date checkInTime;
+	public String checkInTime;
 	
 	/**
 	 * 退房时间
 	 */
-	public Date checkOutTime;
+	public String checkOutTime;
 	
 	/**
 	 * 最晚执行时间
 	 */
-	public Date latestExecutionTime;
+	public String latestExecutionTime;
 	
 	/**
 	 * 房间类型
@@ -64,8 +64,8 @@ public class OrderOnUserPO extends OrderPO implements Serializable{
 	 */
 	public boolean hasChild;
 	
-	public OrderOnUserPO(String initiator,OrderState orderState,Date checkInTime,Date checkOutTime,
-		Date latestExecutionTime,RoomType roomType,int roomNumber,int peopleNumber,boolean hasChild) {
+	public OrderOnUserPO(String initiator,OrderState orderState,String checkInTime,String checkOutTime,
+		String latestExecutionTime,RoomType roomType,int roomNumber,int peopleNumber,boolean hasChild) {
 		super();
 		this.initiator = initiator;
 		this.orderState = orderState;
@@ -95,15 +95,15 @@ public class OrderOnUserPO extends OrderPO implements Serializable{
 		return orderState;
 	}
 	
-	public Date getCheckInTime() {
+	public String getCheckInTime() {
 		return checkInTime;
 	}
 	
-	public Date getCheckOutTime() {
+	public String getCheckOutTime() {
 		return checkOutTime;
 	}
 	
-	public Date getLatestExecutionTime() {
+	public String getLatestExecutionTime() {
 		return latestExecutionTime;
 	}
 	

@@ -2,7 +2,7 @@
 /**
  * 处理客户订单PO
  * @author txin
- * @date 2016/10/15
+ * @String 2016/10/15
  */
 package po;
 
@@ -37,7 +37,7 @@ public class OrderOnWebPO extends OrderPO implements Serializable{
 	/**
 	 * 最晚执行时间
 	 */
-	public Date latestExecutionTime;
+	public String latestExecutionTime;
 	
 	/**
 	 * 房间类型
@@ -60,7 +60,7 @@ public class OrderOnWebPO extends OrderPO implements Serializable{
 	public boolean hasChild;
 	
 	public OrderOnUserPO(String initiator,OrderState orderState,String reason,
-		Date latestExecutionTime,RoomType roomType,int roomNumber,int peopleNumber,boolean hasChild) {
+		String latestExecutionTime,RoomType roomType,int roomNumber,int peopleNumber,boolean hasChild) {
 		super();
 		this.initiator = initiator;
 		this.orderState = orderState;
@@ -93,7 +93,7 @@ public class OrderOnWebPO extends OrderPO implements Serializable{
 		return reason;
 	}
 	
-	public Date getLatestExecutionTime() {
+	public String getLatestExecutionTime() {
 		return latestExecutionTime;
 	}
 	

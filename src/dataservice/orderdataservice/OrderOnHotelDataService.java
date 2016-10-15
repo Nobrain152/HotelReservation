@@ -3,7 +3,7 @@
  * @author txin
  * @date 2016/10/15
  */
-package dataservice.logisticdataservice;
+package dataservice.orderdataservice;
 
 import java.rmi.RemoteException;
 import java.util.ArrayList;
