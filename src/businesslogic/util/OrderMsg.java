@@ -9,7 +9,7 @@ import businesslogic.util.RoomType;
  * @author txin
  *
  */
-public class OrderMsg{
+public class OrderMsg extends ResultMsg{
 	
 	/**
 	 * 订单发起人

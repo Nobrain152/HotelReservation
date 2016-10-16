@@ -20,7 +20,6 @@ public class OrderOnWebDataService_Driver {
     private ArrayList<OrderOnWebPO> pos;
 
     public OrderOnWebDataService_Driver() {
-    	ArrayList<String> barCodes = new ArrayList<String>();
         pos = new ArrayList<OrderOnWebPO>();
         OrderOnWebPO = new OrderOnWebPO("txin",OrderState.EXECUTED,"The train I took was late.",
         		"2016-10-15 24:00",RoomType.ROOM_STANDARD,1,1,false);

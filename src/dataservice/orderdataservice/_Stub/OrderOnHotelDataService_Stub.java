@@ -1,6 +1,5 @@
 package dataservice.orderdataservice._Stub;
 
-
 import dataservice.orderdataservice.OrderOnHotelDataService;
 import po.OrderOnHotelPO;
 
