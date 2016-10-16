@@ -16,6 +16,11 @@ public abstract class OrderVO {
 	public String initiator;
 	
 	/**
+	 * ¼Û¸ñ
+	 */
+	public int price;
+	
+	/**
 	 * ¶©µ¥×´Ì¬
 	 */
 	public OrderState orderState;
@@ -62,6 +67,10 @@ public abstract class OrderVO {
 	
 	public int getPeopleNumber() {
 		return peopleNumber;
+	}
+	
+	public int getPrice(){
+		return price;
 	}
 	
 	public boolean hasChild() {
