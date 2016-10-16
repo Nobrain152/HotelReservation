@@ -9,7 +9,17 @@ import businesslogic.util.OrderMsg;
 import businesslogicservice.orderblservice.OrderOnHotelBLService;
 
 public class OrderOnHotelBLService_Stub implements OrderOnHotelBLService{
+	OrderState orderState;
 
+	public OrderOnUserBLService_Stub(){
+
+	}
+	
+	public OrderOnUserBLService_Stub(OrderState orderState) {
+		super();
+		this.orderState = orderState;
+	}
+	
 	@Override
 	public ArrayList<OrderOnHotelVO> hotelOrderScan() {
 		return new ArrayList<OrderOnHotelVO>();

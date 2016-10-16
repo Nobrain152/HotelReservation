@@ -9,6 +9,17 @@ import businesslogicservice.orderblservice.OrderOnWebBLService;
 
 public class OrderOnWebBLService_Stub implements OrderOnWebBLService{
 
+	OrderState orderState;
+
+	public OrderOnUserBLService_Stub(){
+
+	}
+	
+	public OrderOnUserBLService_Stub(OrderState orderState) {
+		super();
+		this.orderState = orderState;
+	}
+	
 	@Override
 	public ArrayList<OrderOnWebVO> complaintListScan() {
 		return new ArrayList<OrderOnWebVO>();

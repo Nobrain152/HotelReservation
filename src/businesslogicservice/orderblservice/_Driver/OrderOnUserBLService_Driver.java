@@ -12,7 +12,7 @@ public class OrderOnUserBLService_Driver {
 	
 	public static void main(String[] args){
 		OrderOnUserBLService a = new OrderOnUserBLService_Stub();
-		OrderOnUserBLService_Driver driver=new OrderOnUserBLService_Driver();
+		OrderOnUserBLService_Driver driver = new OrderOnUserBLService_Driver();
 		driver.drive(a);
 	}
 	

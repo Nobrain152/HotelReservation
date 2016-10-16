@@ -12,7 +12,7 @@ public class OrderOnHotelBLService_Driver {
 	
 	public static void main(String[] args){
 		OrderOnHotelBLService a = new OrderOnHotelBLService_Stub();
-		OrderOnHotelBLService_Driver driver=new OrderOnHotelBLService_Driver();
+		OrderOnHotelBLService_Driver driver = new OrderOnHotelBLService_Driver();
 		driver.drive(a);
 	}
 	

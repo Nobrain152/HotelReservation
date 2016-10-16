@@ -10,6 +10,17 @@ import businesslogicservice.orderblservice.OrderOnUserBLService;
 
 public class OrderOnUserBLService_Stub implements OrderOnUserBLService{
 
+	OrderState orderState;
+
+	public OrderOnUserBLService_Stub(){
+
+	}
+	
+	public OrderOnUserBLService_Stub(OrderState orderState) {
+		super();
+		this.orderState = orderState;
+	}
+	
 	@Override
 	public ArrayList<OrderOnUserVO> personalOrderScan() {
 		return new ArrayList<OrderOnUserVO>();

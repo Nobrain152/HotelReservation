@@ -12,7 +12,7 @@ public class OrderOnWebBLService_Driver {
 	
 	public static void main(String[] args){
 		OrderOnWebBLService a = new OrderOnWebBLService_Stub();
-		OrderOnWebBLService_Driver driver=new OrderOnWebBLService_Driver();
+		OrderOnWebBLService_Driver driver = new OrderOnWebBLService_Driver();
 		driver.drive(a);
 	}
 	
