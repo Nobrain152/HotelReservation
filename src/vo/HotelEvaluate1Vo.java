@@ -1,27 +1,43 @@
 <<<<<<< HEAD
-package VO;
-
+package vo;
 
 public class HotelEvaluateVO{
 
-    private String hotelID;
-	 
-	private int mark;
-	 
-	public HotelEvaluateVO(String hotelID,int mark){
-	    this.hotelID=hotelID;
-		this.mark=mark;
+	/**
+	 * 评分
+	 */
+	private int score;
+
+	/**
+	 * 评论信息
+	 */
+	private String comment;
+	
+	/**
+	 * 是否订过
+	 */
+	private boolean reserve;
+	
+	
+	public HotelEvaluateVO(int score, String comment, boolean reserve) {
+		super();
+		this.score = score;
+		this.comment = comment;
+		this.reserve=reserve;
+	}
+
+	public String getScore() {
+		return score;
+	}
+
+	public String getComment() {
+		return comment;
+	}
+
+	public boolean isReserved(){
+		return reserve;
 	}
 	
-	public String getHotelID(){
-	    return hotelID;
-	}
-	
-	public int getMark(){
-	    return mark;
-	}
-	
-}
 =======
 package vo;
 
@@ -64,5 +80,5 @@ public class HotelEvaluateVO{
 		return reserve;
 	}
 	
-}	
 >>>>>>> 727ede01d10abd2e000e306ffc37ab3c9bba25f7
+}	
