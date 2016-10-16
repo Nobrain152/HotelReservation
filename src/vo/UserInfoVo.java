@@ -1,7 +1,6 @@
 package vo;
 
-
-public class UserInfoVo{
+public class UserInfoVO{
     
 	private String userid;
 	
@@ -9,24 +8,21 @@ public class UserInfoVo{
 	
 	private String contact;
 	
-	
-	
-	public UserInfoVo(String userid,String username,String contact){
+	public UserInfoVO(String userid,String username,String contact){
 		    this.userid=userid;
 			this.username=username;
 			this.ucontact=contact;
 	}
 	
-	
-	    public String getUserid(){
-		    return userid;
-		}
+	public String getUserid(){
+		return userid;
+	}
 		
-		public String getUsername(){
-		    return username;
-		}
+	public String getUsername(){
+	    return username;
+	}
 		
-		public String getContact(){
-		    return contact;
-		}
+	public String getContact(){
+	    return contact;
+	}
 }

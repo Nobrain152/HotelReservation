@@ -1,43 +1,38 @@
 package vo;
 
-import vo.util.HotelIDVo;
+import vo.util.HotelIDVO;
 
-
-
-public class StuffInfoVo extends UserInfoVo{
+public class StuffInfoVO extends UserInfoVO{
     
+	private String userid;
+		
+	private String username;
+		
+	private String contact;
+		
+	private HotelIDVO hotelVO;
 	
-	    private String userid;
+	public StuffInfoVO(String userid,String username,String contact,HotelIDVO VO){
+	    this.userid=userid;
+		this.username=username;
+		this.ucontact=contact;
+		this.hotelVO=VO;
+	}
 		
-		private String username;
+	public String getUserid(){
+	    return userid;
+	}
 		
-		private String contact;
+	public String getUsername(){
+	    return username;
+	}
 		
-		private HotelIDVo hotelvo;
-		
-		
-		public StuffInfoVo(String userid,String username,String contact,HotelIDVo vo){
-		    this.userid=userid;
-			this.username=username;
-			this.ucontact=contact;
-			this.hotelvo=vo;
-		}
-		
-		public String getUserid(){
-		    return userid;
-		}
-		
-		public String getUsername(){
-		    return username;
-		}
-		
-		public String getContact(){
-		    return contact;
-		}
-		
-		public HotelIDVo getHotel(){
-			return hotelvo;
-		}
-		
+	public String getContact(){
+	    return contact;
+	}
+	
+	public HotelIDVO getHotel(){
+		return hotelVO;
+	}	
 		
 }

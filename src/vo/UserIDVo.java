@@ -1,13 +1,10 @@
 package vo;
 
-
-
-public class UserIDVo{
-
-
+public class UserIDVO{
+	
     private String userid;
 	
-	public UserIDVo(String userid){
+	public UserIDVO(String userid){
 	    this.userid=userid;
 	}
 	

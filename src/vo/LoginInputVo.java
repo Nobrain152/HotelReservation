@@ -1,14 +1,12 @@
 package vo;
 
-
-
-public class LoginInputVo{
+public class LoginInputVO{
 
     private String userid;
 	
 	private String userpassword;
 	
-	public LoginInputVo(String userid,String userpassword){
+	public LoginInputVO(String userid,String userpassword){
 	    this.userid=userid;
 		this.userpassword=userpassword;
 	}

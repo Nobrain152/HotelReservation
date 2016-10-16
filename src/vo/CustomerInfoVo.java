@@ -1,13 +1,10 @@
 package vo;
 
-
-
-public class CustomerInfoVo extends UserInfoVo{
-
+public class CustomerInfoVO extends UserInfoVO{
 		
 		Private int credit;
 		
-		public CustomerInfoVo(String userid,String username,String contact,int credit){
+		public CustomerInfoVO(String userid,String username,String contact,int credit){
 		    this.userid=userid;
 			this.username=username;
 			this.ucontact=contact;

@@ -1,8 +1,6 @@
 package vo;
 
-
 public class HotelInfoVO{
-
 
 	/**
 	 * Ãû³Æ
@@ -82,5 +80,4 @@ public class HotelInfoVO{
 		return reserve;
 	}
 
-	
 }	

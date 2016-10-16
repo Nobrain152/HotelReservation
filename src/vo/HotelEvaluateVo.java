@@ -1,8 +1,6 @@
 package vo;
 
-
-public class HotelEvaluateVo{
-
+public class HotelEvaluateVO{
 
 	/**
 	 * 评分
@@ -20,7 +18,7 @@ public class HotelEvaluateVo{
 	private boolean reserve;
 	
 	
-	public HotelEvaluateVo(int score, String comment, boolean reserve) {
+	public HotelEvaluateVO(int score, String comment, boolean reserve) {
 		super();
 		this.score = score;
 		this.comment = comment;

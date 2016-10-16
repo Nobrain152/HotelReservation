@@ -5,7 +5,6 @@ import businesslogic.util.RoomState;
 
 public class HotelInfoVO{
 
-
 	/**
 	 * 客房状态
 	 */
@@ -26,8 +25,6 @@ public class HotelInfoVO{
 	 * 价格
 	 */
 	private int price;
-	
-
 
 	public RoomInfoVO(RoomState state, RoomType type, int number, int price ) {
 		super();
@@ -52,7 +49,5 @@ public class HotelInfoVO{
 	public int getPrice() {
 		return price;
 	}
-	
 
-	
 }	
