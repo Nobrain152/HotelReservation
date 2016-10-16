@@ -4,7 +4,7 @@ import businesslogicservice.userblservice.WebStuffWebsiteManagementBLService;
 
 public class WebStuffWebsiteManagementUI {
 	
-	public void init(WebStuffWebsiteManagementBLService service){
+	public WebStuffWebsiteManagementUI(WebStuffWebsiteManagementBLService service){
 		
 	}
 

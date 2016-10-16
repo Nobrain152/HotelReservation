@@ -4,7 +4,7 @@ import businesslogicservice.userblservice.StuffIndividualInformationManagementBL
 
 public class StuffIndividualInformationManagementUI {
 	
-	public void init(StuffIndividualInformationManagementBLService service){
+	public StuffIndividualInformationManagementUI(StuffIndividualInformationManagementBLService service){
 		
 	}
 

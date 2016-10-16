@@ -1,10 +1,10 @@
-package presentation.hetelui;
+package presentation.hotelui;
 
 import businesslogicservice.hotelblservice.RoomAddBLService;
 
-public class RoomAddBLService {
+public class RoomAddUI {
 	
-	public RoomAddBLService(RoomAddBLService service){
+	public RoomAddUI(RoomAddBLService service){
 		
 	}
 

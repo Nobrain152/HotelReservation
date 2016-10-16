@@ -4,7 +4,7 @@ import businesslogicservice.userblservice.WebManagerHotelOperationBLService;
 
 public class WebManagerHotelOperationUI {
 	
-	public void init(WebManagerHotelOperationBLService service){
+	public WebManagerHotelOperationUI(WebManagerHotelOperationBLService service){
 		
 	}
 

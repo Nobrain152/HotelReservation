@@ -4,7 +4,7 @@ import businesslogicservice.userblservice.WebIndividualInformationManagementBLSe
 
 public class WebIndividualInformationManagementUI {
 	
-	public void init(WebIndividualInformationManagementBLService service){
+	public WebIndividualInformationManagementUI(WebIndividualInformationManagementBLService service){
 		
 	}
 

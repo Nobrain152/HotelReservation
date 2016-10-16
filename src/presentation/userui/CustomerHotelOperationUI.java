@@ -4,7 +4,7 @@ import businesslogicservice.userblservice.CustomerHotelOperationBLService;
 
 public class CustomerHotelOperationUI {
 	
-	public void init(CustomerHotelOperationBLService service){
+	public CustomerHotelOperationUI(CustomerHotelOperationBLService service){
 		
 	}
 
