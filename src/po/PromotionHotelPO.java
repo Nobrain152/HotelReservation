@@ -1,6 +1,7 @@
 package po;
 
 import java.io.Serializable;
+import business.util.*;
 
 /**
  * 表示酒店营销策略的PO
@@ -11,7 +12,7 @@ import java.io.Serializable;
 public class PromotionHotelPO implements Serializable {
 	private static final long serialVersionUID = 5894748451667870139L;
 	
-	public PromotionHotelPO(String type,String customType,String timeBegin,String timeOver,String ratio) {
+	public PromotionHotelPO(PromotionHotelType type,String customType,String timeBegin,String timeOver,String ratio) {
 		// TODO Auto-generated constructor stub
 		super();
 		this.type = type;
@@ -24,7 +25,7 @@ public class PromotionHotelPO implements Serializable {
 	/**
 	 * 促销策略类型
 	 */
-	String type = null;
+	PromotionHotelType type = null;
 	
 	/**
 	 * 促销策略适用人群类型
@@ -46,7 +47,7 @@ public class PromotionHotelPO implements Serializable {
 	 */
 	String ratio = null;
 	
-	public String getType() {
+	public PromotionHotelType getType() {
 		return type;
 	}
 	
