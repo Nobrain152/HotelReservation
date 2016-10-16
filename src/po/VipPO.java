@@ -16,7 +16,7 @@ public class VipPO implements Serializable{
 	private static final long serialVersionUID = -9083060785710237490L;
 	
 	
-	public VipPO(String name, ArrayList<int[][]> levelList,int level, String type,VipType type1) {
+	public VipPO(String name, ArrayList<int[]> levelList,int level, String type,VipType type1) {
 		// TODO Auto-generated constructor stub
 		this.levelList = levelList;
 		this.level = level;
