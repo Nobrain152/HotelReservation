@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package VO;
 
 
@@ -23,6 +24,8 @@ public class HotelEvaluateVO{
 	
 }
 =======
+=======
+>>>>>>> f606802332e7b71721ecd3b8e6715285e8cb806b
 package vo;
 
 
@@ -64,5 +67,9 @@ public class HotelEvaluateVO{
 		return reserve;
 	}
 	
+<<<<<<< HEAD
 }	
 >>>>>>> 727ede01d10abd2e000e306ffc37ab3c9bba25f7
+=======
+}	
+>>>>>>> f606802332e7b71721ecd3b8e6715285e8cb806b

@@ -4,7 +4,7 @@ import businesslogicservice.userblservice.CustomerIndividualInformationManagemen
 
 public class CustomerIndividualInformationManagementUI {
 	
-	public void init(CustomerIndividualInformationManagementBLService service){
+	public CustomerIndividualInformationManagementUI(CustomerIndividualInformationManagementBLService service){
 		
 	}
 

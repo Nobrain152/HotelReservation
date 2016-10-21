@@ -2,9 +2,9 @@ package presentation.hotelui;
 
 import businesslogicservice.hotelblservice.HotelReservedBLService;
 
-public class HotelReservedUI {
+public class HotelReservedCheckUI {
 
-	public HotelReservedUI(HotelReservedBLService service) {
+	public HotelReservedCheckUI(HotelReservedBLService service) {
 		
 	}
 	
