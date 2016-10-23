@@ -1,31 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-package VO;
-
-
-public class HotelEvaluateVO{
-
-    private String hotelID;
-	 
-	private int mark;
-	 
-	public HotelEvaluateVO(String hotelID,int mark){
-	    this.hotelID=hotelID;
-		this.mark=mark;
-	}
-	
-	public String getHotelID(){
-	    return hotelID;
-	}
-	
-	public int getMark(){
-	    return mark;
-	}
-	
-}
-=======
-=======
->>>>>>> f606802332e7b71721ecd3b8e6715285e8cb806b
 package vo;
 
 
@@ -67,9 +39,4 @@ public class HotelEvaluateVO{
 		return reserve;
 	}
 	
-<<<<<<< HEAD
 }	
->>>>>>> 727ede01d10abd2e000e306ffc37ab3c9bba25f7
-=======
-}	
->>>>>>> f606802332e7b71721ecd3b8e6715285e8cb806b
