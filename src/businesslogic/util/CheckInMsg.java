@@ -1,27 +1,14 @@
-package vo;
+package businesslogic.util;
 
-import java.util.ArrayList;
-
-import businesslogic.util.OrderState;
 import businesslogic.util.RoomType;
 
 /**
- * 客户订单VO
+ * 入住信息
  * 
  * @author txin
  *
  */
-public class OrderOnUserVO extends OrderVO{
-	
-	/**
-	 * 订单发起人
-	 */
-	public String initiator;
-	
-	/**
-	 * 订单状态
-	 */
-	public OrderState orderState;
+public class OrderMsg extends ResultMsg{
 	
 	/**
 	 * 入住时间
@@ -41,7 +28,7 @@ public class OrderOnUserVO extends OrderVO{
 	/**
 	 * 房间类型
 	 */
-	public RoomType roomType;
+	public String roomType;
 	
 	/**
 	 * 房间数量
@@ -58,21 +45,9 @@ public class OrderOnUserVO extends OrderVO{
 	 */
 	public boolean hasChild;
 	
-	/**
-	 * 手机号码
-	 */
-	public String phoneNumber;
-	
-	/**
-	 * 邮箱地址
-	 */
-	public String emailAddress;
-	
-	public OrderOnUserVO(String initiator,OrderState orderState,String checkInTime,String checkOutTime,
-		String latestExecutionTime,RoomType roomType,int roomNumber,int peopleNumber,boolean hasChild,String phoneNumber,String emailAddress) {
+	public CheckInMsg(String checkInTime,String checkOutTime,
+		String latestExecutionTime,RoomType roomType,int roomNumber,int peopleNumber,boolean hasChild) {
 		super();
-		this.initiator = initiator;
-		this.orderState = orderState;
 		this.checkInTime = checkInTime;
 		this.checkOutTime = checkOutTime;
 		this.latestExecutionTime = latestExecutionTime;
@@ -80,27 +55,12 @@ public class OrderOnUserVO extends OrderVO{
 		this.roomNumber = roomNumber;
 		this.peopleNumber = peopleNumber;
 		this.hasChild = hasChild;
-		this.phoneNumber = phoneNumber;
-		this.emailAddress = emailAddress;
-	}
-	
-	@Override
-	public String toString(){
-		return initiator;
 	}
 	
     public boolean hasChild() {
         return hasChild;
     }
 
-    public String getInitiator() {
-        return initiator;
-    }
-	
-	public OrderState getOrderState() {
-		return orderState;
-	}
-	
 	public String getCheckInTime() {
 		return checkInTime;
 	}
@@ -124,14 +84,4 @@ public class OrderOnUserVO extends OrderVO{
 	public int getPeopleNumber() {
 		return peopleNumber;
 	}
-	
-	public String getPhoneNumber() {
-		return phoneNumber;
-	}
-	
-	public String getEmailAddress() {
-		return emailAddress;
-	}
-
-
 }

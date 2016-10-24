@@ -1,14 +1,14 @@
 package presentation.orderui;
 /**
- * 网站订单
+ * 申诉处理界面
  * @author txin
- * @data 2016/10/15
+ * @data 2016/10/24
  *
  */
 import businessorderservice.orderblservice.OrderOnWebBLService;
 
-public class OrderOnWebUI {
+public class ComplaintHandleUI {
 
-	public OrderOnWebUI(OrderOnWebBLService service){}
+	public ComplaintHandleUI(OrderOnWebBLService service){}
 	
 }
