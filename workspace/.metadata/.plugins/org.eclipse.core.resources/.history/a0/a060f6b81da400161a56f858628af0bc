@@ -1,0 +1,36 @@
+package businesslogicservice.userblservice;
+
+import java.util.ArrayList;
+
+import vo.HotelInfoVO;
+import vo.OrderOnHotelVO;
+import vo.PromotionHotelVO;
+import vo.UserIDVO;
+
+public class HotelStuffHotelOperationBlServiceImp implements HotelStuffHotelOperationBlService {
+
+	//查询酒店信息
+	public HotelInfoVO HotelInformationInquiry(HotelIDVO vo){
+		
+	}
+			
+	//修改酒店信息
+	public boolean HotelInformationModification(HotelIDVO vo1,UserIDVO vo2){
+		
+	}
+			
+	//调整酒店策略
+	public boolean HotelStrategeManage(HotelIDVo vo1,PromotionHotelVO vo){
+		
+	}
+			
+	//更新订单状态
+	public void OrderStateUpdate(UserIDVO vo1,OrderOnHotelVO vo2){
+		
+	}
+			
+	//酒店订单浏览
+	public ArrayList<OrderOnHotelVO> OrderScan(HotelIDVO vo){
+		
+	}
+}

@@ -1,0 +1,29 @@
+package businesslogicservice.userblservice;
+
+import po.HotelIDVoPO;
+import vo.HotelInfoVO;
+import vo.UserIDVO;
+
+import java.security.PublicKey;
+
+import dataservice.userdataservice.HotelIDVO;
+import dataservice.userdataservice.UserManagementDataServiceImp;
+
+public class WebManagerHotelOperationBlServiceImp implements WebManagerHotelOperationBlService {
+
+	UserManagementDataServiceImp check;
+	
+	public WebManagerHotelOperationBlServiceImp(){
+		check=new UserManagementDataServiceImp();
+	}
+	
+	//增加酒店
+	public void HotelAdd(HotelInfoVO vo){
+		
+	}
+			
+	//增加酒店管理人员
+	public boolean StuffAdd(HotelIDVoPO vo1,UserIDVO vo2){
+		return check.addHotelStuff(vo2,vo1);
+	}
+}

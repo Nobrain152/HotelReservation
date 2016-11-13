@@ -1,0 +1,27 @@
+package businesslogicservice.userblservice;
+
+import vo.LoginInputVO;
+import dataservice.userdataservice.UserManagementDataServiceImp;
+
+public class LoginInputBLServiceImp implements LoginInputBLService {
+
+	UserManagementDataServiceImp data=new UserManagementDataServiceImp();
+	//登录接口
+    public boolean  LogIn(LoginInputVO vo){
+    	String name=vo.getUserid();
+    	String pass=vo.getUserpassword();
+    	String real=data.GetLoginInfo(name);
+    	return real.equals(pass);
+    	
+    }
+	
+	//登出接口
+	public boolean LogOut(LoginInputVO vo){
+		
+	}
+	
+	//注册接口
+	public String Register(LoginInputVO vo){
+		return data.AddUser(vo);
+	}
+}

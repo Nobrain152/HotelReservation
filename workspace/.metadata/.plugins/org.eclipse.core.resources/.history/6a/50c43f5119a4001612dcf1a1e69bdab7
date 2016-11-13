@@ -1,0 +1,56 @@
+package businesslogicservice.userblservice;
+
+import java.util.ArrayList;
+
+import vo.CustomerInfoVO;
+import vo.HotelInfoVO;
+import vo.IntegralVO;
+import vo.OrderOnUserVO;
+import vo.UserIDVO;
+
+public class Customer  {
+
+	CustomerInfoVO infomation;
+	CustomerIndividualInformationManagementBLServiceImp in;
+	CustomerHotelOperationBLServoceImpl hotel;
+	UserIDVO idvo;
+	
+	public Customer(String id){
+		idvo=new UserIDVO(id);
+		in=new CustomerIndividualInformationManagementBLServiceImp(idvo);
+		hotel=new CustomerHotelOperationBLServoceImpl(id);
+		infomation=(CustomerInfoVO)in.IndividualBaseInfolnquiry(idvo);
+	}
+	
+	//客户个人信息修改接口
+	public boolean BaseInfoModification(CustomerInfoVO vo2){
+		return in.IndividualBaseInfoModification(idvo,vo2);
+	}
+				
+	//客户个人订单查询接口
+	public ArrayList<OrderOnUserVO> OrderInquiry(){
+		return in.orderVOs;
+	}
+				
+   //客户个人预定过的酒店查询接口
+	public ArrayList<HotelInfoVO> HotelInquiry(){
+		return in.hotelInfoVOs;
+	}
+				
+	//客户个人信用度查询接口
+	public IntegralVO IndividualCredictInquiry(){
+		return in.integralVO;
+	}
+	
+	public String getid(){
+		return infomation.getUserid();
+	}
+	
+	public String getname(){
+		return infomation.getUsername();
+	}
+	
+	public String getcontact(){
+	    return infomation.getContact();
+	}
+}
